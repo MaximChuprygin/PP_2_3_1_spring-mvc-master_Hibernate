@@ -3,7 +3,6 @@ package web.model;
 
 import javax.persistence.*;
 import javax.validation.constraints.Email;
-import javax.validation.constraints.Min;
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.Size;
 
@@ -27,7 +26,6 @@ public class User {
     private String email;
 
     @NotEmpty(message = "Password should not be empty")
-    //@Min(value = 4, message = "Password should be min 4 characters")
     private String password;
 
     public User() {
